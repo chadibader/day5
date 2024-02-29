@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
+import rightImage from './Components/rightImage.jpg';
 
 const Login: React.FC = () => {
   const [firstName, setFirstName] = useState('');
@@ -104,6 +105,10 @@ const Login: React.FC = () => {
         >
           Register
         </button>
+        </div>
+        <div className="right-image-container">
+        <img src={rightImage} alt="Right Image" className="right-image" />
+
       </div>
     </div>
   );
